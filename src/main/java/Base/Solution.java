@@ -69,16 +69,9 @@ public class Solution {
         double costFinal = roundCost / 1000.0;
 
         DecimalFormat format = new DecimalFormat("0.00");
-
-        System.out.print("The tax is $");
-        System.out.print(format.format(finalTax));
-        System.out.println(".");
-
         DecimalFormat format2 = new DecimalFormat("0.00");
 
-        System.out.print("The total is $");
-        System.out.print(format2.format(costFinal));
-        System.out.print(".");
+        System.out.print("The tax is $" +format.format(finalTax)+ ".\n\rThe total is $"+format2.format(costFinal)+".");
 
     }
 
